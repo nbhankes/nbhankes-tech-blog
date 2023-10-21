@@ -29,12 +29,7 @@ public class Car
     public string Model { get; set; }
     public int Year { get; set; }
 
-    //A property is a class member that offers a convenient way
-    //to access, modify, or calculate the value of a private field.
-    //The get and set keywords are used to define the accessors
-    //for the property. The get accessor returns the property
-    //value, and the set accessor assigns a new value to the 
-    //property
+    //A property is a class member that offers a convenient way to access, modify, or calculate the value of a private field. The get and set keywords are used to define the accessors for the property. The get accessor returns the property value, and the set accessor assigns a new value to the property
 
 
 
@@ -46,8 +41,7 @@ public class Car
 			this.year = year;
     }
 
-     //A Class Constructor is a special member method responsible
-     //for initializing the object of that class.
+     //A Class Constructor is a special member method responsible for initializing the object of that class.
 
 
 
@@ -63,10 +57,7 @@ public class Car
         	Console.WriteLine("The vehicle is driving.");
     }
 
-    //A method is a block of code within a class that performs a
-    //specific task or action. Methods are declared within a class
-    //and are accessed by and invoked on objects created from 
-	//that class. 
+    //A method is a block of code within a class that performs a specific task or action. Methods are declared within a class and are accessed by and invoked on objects created from that class. 
 }
 \`\`\`
 

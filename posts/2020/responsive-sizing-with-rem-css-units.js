@@ -9,7 +9,7 @@ The CSS unit "rem" stands for "root em." The scale of a rem is dependent on the 
 #####Study the CodePen example below as the JavaScript function cycles through root font sizes ranging between 12px and 28px.
 
 
-<iframe height="400" style="width: 100%;" scrolling="no" title="Responsive Container and Text" src="https://codepen.io/nbhankes/embed/gOpzqJN?default-tab=result%2Cresult" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe height="400" style="width: 100%;" scrolling="no" title="Responsive Container and Text" src="https://codepen.io/nbhankes/embed/gOpzqJN?default-tab=css%2Cresult" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/nbhankes/pen/gOpzqJN">
   Responsive Container and Text</a> by Nate Hankes (<a href="https://codepen.io/nbhankes">@nbhankes</a>)
   on <a href="https://codepen.io">CodePen</a>.

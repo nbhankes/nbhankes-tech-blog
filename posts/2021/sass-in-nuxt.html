@@ -1,33 +1,34 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel='stylesheet' type='text/css' href="../../lib/bootstrap.min.css">
-    <link rel='stylesheet' type='text/css' href="../../style.css">
-    <title>Using Sass In Nuxt.js</title>
-	<meta name="description" content="A tutorial on how to add Sass to your Nuxt.js app">
-	<meta name="keywords" content="Nuxt, Sass, Tutorial" />
-</head>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel='stylesheet' type='text/css' href="../../lib/bootstrap.min.css">
+		<link rel='stylesheet' type='text/css' href="../../style.css">
+		<title>Using Sass In Nuxt.js</title>
+		<meta name="description" content="A tutorial on how to add Sass to your Nuxt.js app">
+		<meta name="keywords" content="Nuxt, Sass, Tutorial" />
+	</head>
 
-<body>
-    <div class="container my-5">
-        <a href="../../index.html" id="logo">N. B. Hankes</a>
-        <div class="row">
-            <div class="col-md-6 mx-auto">
-                <div class="mt-2" id="post"></div>
-            </div>
-        </div>
-        <div id="footer">
-            Copyright new Date.getFullYear();
-        </div>
-    </div>
-</body>
+	<body>
+		<div class="my-5">
+			<a href="../../index.html" id="logo" class="article-logo">N. B. Hankes</a>
+			<div class="row">
+				<div class="col-10 mx-auto">
+					<div class="mt-2" id="post"></div>
+				</div>
+			</div>
+			<div id="footer">
+				Copyright new Date.getFullYear();
+			</div>
+		</div>
+	</body>
 
-<script src="../../lib/showdown.min.js"></script>
+	<script src="../../lib/showdown.min.js"></script>
 
-<!-- UPDATE NAME OF THE POST JS FILE -->
-<script type="module">
-    import { post } from "./sass-in-nuxt.js";
-    document.getElementById("post").innerHTML = new showdown.Converter().makeHtml(post);
-</script>
+	<!-- UPDATE NAME OF THE POST JS FILE -->
+	<script type="module">
+		import { post } from "./sass-in-nuxt.js";
+		document.getElementById("post").innerHTML = new showdown.Converter().makeHtml(post);
+	</script>
+</html>
