@@ -12,13 +12,13 @@ The Astrohaus Freewrite typewriter is a distraction-free writing tool. These key
 
 **Start a new draft**: <button style="background: red; color:white; border-radius:5px; outline:none">new</button> + <button style="background: red; color:white; border-radius:5px; outline:none">new</button>
 
-**Delete word**: <button style="background: red; color:white; border-radius:5px; outline:none">new</button> + <button style="background: white; color:black; border-radius:5px; outline:none">backspace</button>
+**Delete word**: <button style="background: red; color:white; border-radius:5px; outline:none">new</button> + <button style="background: white; color:black; border-radius:5px;">backspace</button>
 
-**Undo Previous**: <button style="background: red; color:white; border-radius:5px; outline:none">new</button> + <button style="background: white; color:black; border-radius:5px; outline:none">z</button>
+**Undo Previous**: <button style="background: red; color:white; border-radius:5px; outline:none">new</button> + <button style="background: white; color:black; border-radius:5px;">z</button>
 
-**Redo Previous**: <button style="background: red; color:white; border-radius:5px; outline:none">new</button> + <button style="background: white; color:black; border-radius:5px; outline:none">y</button>
+**Redo Previous**: <button style="background: red; color:white; border-radius:5px; outline:none">new</button> + <button style="background: white; color:black; border-radius:5px; ">y</button>
 
-**Cycle through recent documents in a folder**: <button style="background: red; color:white; border-radius:5px; outline:none">new</button> + press <button style="background: white; color:black; border-radius:5px; outline:none">pg up</button> or <button style="background: white; color:black; border-radius:5px; outline:none">pg dn</button>
+**Cycle through recent documents in a folder**: <button style="background: red; color:white; border-radius:5px; outline:none">new</button> + press <button style="background: white; color:black; border-radius:5px; ">pg up</button> or <button style="background: white; color:black; border-radius:5px; ">pg dn</button>
 
 <div class="mx-5 mb-4 pl-2" style="border-left: 2px solid red;>
 	Must press <button style="background: white; color:black; border-radius:5px; outline:none">pg dn</button> twice initially to go to the most recent document. Press <button style="background: white; color:black; border-radius:5px; outline:none">pg dn</button> while holding <button style="background: red; color:white; border-radius:5px; outline:none">new</button> to access older drafts and <button style="background: white; color:black; border-radius:5px; outline:none">pg up</button> to return to more recent drafts.
