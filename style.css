@@ -11,10 +11,17 @@
 }
 
 :root {
+	font-size: 12px;
 	--gold: #F5A614;
 	--sea-foam-dark: #4FCFAB;
 	--sea-foam-light: #CFF2E8;
-  }
+}
+
+@media screen and (max-width: 400px) {
+	:root {
+		font-size: 9px;
+	}
+}
 
 h1,
 h2,
