@@ -10,18 +10,18 @@ The Astrohaus Freewrite typewriter is a distraction-free writing tool. These key
 </figure>
 
 
-**Start a new draft**: <button style="background: red; color:white; border-radius:5px; outline:none">new</button> + <button style="background: red; color:white; border-radius:5px; outline:none">new</button>
+**Start a new draft**: <button style="background: #DE172E; color:white; border-radius:5px; outline:none">new</button> + <button style="background: #DE172E; color:white; border-radius:5px; outline:none">new</button>
 
-**Delete word**: <button style="background: red; color:white; border-radius:5px; outline:none">new</button> + <button style="background: white; color:black; border-radius:5px; outline: 1px solid black">backspace</button>
+**Delete word**: <button style="background: #DE172E; color:white; border-radius:5px; outline:none">new</button> + <button style="background: white; color:black; border-radius:5px; outline: 1px solid black">backspace</button>
 
-**Undo Previous**: <button style="background: red; color:white; border-radius:5px; outline:none">new</button> + <button style="background: white; color:black; border-radius:5px; outline: 1px solid black">z</button>
+**Undo Previous**: <button style="background: #DE172E; color:white; border-radius:5px; outline:none">new</button> + <button style="background: white; color:black; border-radius:5px; outline: 1px solid black">z</button>
 
-**Redo Previous**: <button style="background: red; color:white; border-radius:5px; outline:none">new</button> + <button style="background: white; color:black; border-radius:5px; outline: 1px solid black">y</button>
+**Redo Previous**: <button style="background: #DE172E; color:white; border-radius:5px; outline:none">new</button> + <button style="background: white; color:black; border-radius:5px; outline: 1px solid black">y</button>
 
-**Cycle through recent documents in a folder**: <button style="background: red; color:white; border-radius:5px; outline:none">new</button> + press <button style="background: white; color:black; border-radius:5px; outline: 1px solid black">pg up</button> or <button style="background: white; color:black; border-radius:5px; outline: 1px solid black">pg dn</button>
+**Cycle through recent documents in a folder**: <button style="background: #DE172E; color:white; border-radius:5px; outline:none">new</button> + press <button style="background: white; color:black; border-radius:5px; outline: 1px solid black">pg up</button> or <button style="background: white; color:black; border-radius:5px; outline: 1px solid black">pg dn</button>
 
-<div class="mx-5 mb-4 pl-2" style="border-left: 2px solid red;>
-	Must press <button style="background: white; color:black; border-radius:5px; outline: 1px solid black">pg dn</button> twice initially to go to the most recent document. Press <button style="background: white; color:black; border-radius:5px; outline: 1px solid black">pg dn</button> while holding <button style="background: red; color:white; border-radius:5px; outline:none">new</button> to access older drafts and <button style="background: white; color:black; border-radius:5px; outline: 1px solid black">pg up</button> to return to more recent drafts.
+<div class="mx-5 mb-4 pl-2" style="border-left: 6px solid #DE172E;>
+	Must press <button style="background: white; color:black; border-radius:5px; outline: 1px solid black">pg dn</button> twice initially to go to the most recent document. Press <button style="background: white; color:black; border-radius:5px; outline: 1px solid black">pg dn</button> while holding <button style="background: #DE172E; color:white; border-radius:5px; outline:none">new</button> to access older drafts and <button style="background: white; color:black; border-radius:5px; outline: 1px solid black">pg up</button> to return to more recent drafts.
 </div>
 
 
@@ -36,7 +36,7 @@ The Astrohaus Freewrite typewriter is a distraction-free writing tool. These key
 
 **Send draft to email**: <button style="background: white; color:black; border-radius:5px; outline: 1px solid black">send</button>
 
-<div class="mx-5 mb-4 pl-2" style="border-left: 2px solid red;">
+<div class="mx-5 mb-4 pl-2" style="border-left: 6px solid #DE172E;">
 Email address associated with your Postbox account.
 </div>
 
