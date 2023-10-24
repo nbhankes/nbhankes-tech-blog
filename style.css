@@ -11,7 +11,7 @@
 }
 
 :root {
-	font-size: 12px;
+	font-size: 14px;
 	--gold: #F5A614;
 	--sea-foam-dark: #4FCFAB;
 	--sea-foam-light: #CFF2E8;
@@ -19,7 +19,7 @@
 
 @media screen and (max-width: 400px) {
 	:root {
-		font-size: 10px;
+		font-size: 12px;
 	}
 }
 
@@ -33,11 +33,35 @@ h6 {
 	color: black;
 }
 
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1.8rem;
+}
+
+h3 {
+	font-size: 1.6rem;
+}
+
+h4 {
+	font-size: 1.4rem;
+}
+
+h5 {
+	font-size: 1.2rem;
+}
+
+h6 {
+	font-size: 1rem;
+}
+
 #logo {
 	font-family: 'TitleFont', Arial;
     text-align: center;
 	display: block;
-	font-size: 3rem;
+	font-size: 2.2rem;
 	overflow: hidden;
 	background: linear-gradient(to right, var(--gold), var(--gold) 50%, black 50%);
 	background-clip: text;
