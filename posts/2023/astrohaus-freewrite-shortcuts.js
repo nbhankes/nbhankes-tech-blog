@@ -6,7 +6,7 @@ The Astrohaus Freewrite typewriter is a distraction-free writing tool. These key
 
 <figure>
 	<img src="https://getfreewrite.com/cdn/shop/files/SmartTypewriter-13_5000x.jpg?v=1683734481"  alt="Astrohaus Freewrite" style="margin: 0 10%; max-width:80%;">
-	<figcaption style="margin-left: 10%;">Photo by <a href="https://getfreewrite.com/">Astrohaus</a></figcaption>
+	<figcaption style="margin-left: 10%;">Photo by <a href="https://getfreewrite.com/" target="_blank">Astrohaus</a></figcaption>
 </figure>
 
 
@@ -20,7 +20,7 @@ The Astrohaus Freewrite typewriter is a distraction-free writing tool. These key
 
 **Cycle through recent documents in a folder**: <button style="background: #DE172E; color:white; border-radius:5px; outline:none">new</button> + press <button style="background: white; color:black; border-radius:5px; outline: 1px solid black">pg up</button> or <button style="background: white; color:black; border-radius:5px; outline: 1px solid black">pg dn</button>
 
-<div class="mx-5 mb-4 pl-2" style="border-left: 6px solid #DE172E;>
+<div class="mx-5 mb-4 pl-2" style="border-left: 6px solid #DE172E;">
 	Must press <button style="background: white; color:black; border-radius:5px; outline: 1px solid black">pg dn</button> twice initially to go to the most recent document. Press <button style="background: white; color:black; border-radius:5px; outline: 1px solid black">pg dn</button> while holding <button style="background: #DE172E; color:white; border-radius:5px; outline:none">new</button> to access older drafts and <button style="background: white; color:black; border-radius:5px; outline: 1px solid black">pg up</button> to return to more recent drafts.
 </div>
 
