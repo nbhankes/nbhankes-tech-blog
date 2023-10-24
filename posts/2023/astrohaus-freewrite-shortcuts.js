@@ -5,8 +5,8 @@ export const post = `
 The Astrohaus Freewrite typewriter is a distraction-free writing tool. These keyboard shortcuts will make your writing practice even more efficient.
 
 <figure>
-	<img src="https://getfreewrite.com/cdn/shop/files/SmartTypewriter-13_5000x.jpg?v=1683734481"  alt="Astrohaus Freewrite" style="max-width:100%;">
-	<figcaption>Photo by <a href="https://getfreewrite.com/">Astrohaus</a></figcaption>
+	<img src="https://getfreewrite.com/cdn/shop/files/SmartTypewriter-13_5000x.jpg?v=1683734481"  alt="Astrohaus Freewrite" style="margin: 0 10%; max-width:80%;">
+	<figcaption style="margin-left: 10%;">Photo by <a href="https://getfreewrite.com/">Astrohaus</a></figcaption>
 </figure>
 
 
