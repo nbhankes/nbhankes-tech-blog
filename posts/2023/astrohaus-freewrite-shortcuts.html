@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel='stylesheet' type='text/css' href="../../lib/bootstrap.min.css">
+    <link rel='stylesheet' type='text/css' href="../../style.css">
+    <title>Astrohaus Freewrite Keyboard Shortcuts</title>
+	<meta name="description" content="These Astrohaus Freewrite keyboard shortcuts will make your writing practice even more efficient.">
+	<meta name="keywords" content="Astrohaus, Freewrite, typewriter" />
+</head>
+
+<body>
+    <div class="my-5">
+        <a href="../../index.html" id="logo" class="article-logo">N. B. Hankes</a>
+        <div class="row">
+            <div class="col-10 mx-auto">
+                <div class="mt-2" id="post"></div>
+            </div>
+        </div>
+        <div id="footer">
+            Copyright new Date.getFullYear();
+        </div>
+    </div>
+</body>
+
+<script src="../../lib/showdown.min.js"></script>
+
+<!-- UPDATE NAME OF THE POST JS FILE -->
+<script type="module">
+    import { post } from "./astrohaus-freewrite-shortcuts.js";
+    document.getElementById("post").innerHTML = new showdown.Converter().makeHtml(post);
+</script>
