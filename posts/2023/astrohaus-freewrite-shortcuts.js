@@ -12,29 +12,29 @@ The Astrohaus Freewrite typewriter is a distraction-free writing tool. These key
 
 **Start a new draft**: <button style="background: red; color:white; border-radius:5px; outline:none">new</button> + <button style="background: red; color:white; border-radius:5px; outline:none">new</button>
 
-**Delete word**: <button style="background: red; color:white; border-radius:5px; outline:none">new</button> + <button style="background: white; color:black; border-radius:5px;">backspace</button>
+**Delete word**: <button style="background: red; color:white; border-radius:5px; outline:none">new</button> + <button style="background: white; color:black; border-radius:5px; outline: 1px solid black">backspace</button>
 
-**Undo Previous**: <button style="background: red; color:white; border-radius:5px; outline:none">new</button> + <button style="background: white; color:black; border-radius:5px;">z</button>
+**Undo Previous**: <button style="background: red; color:white; border-radius:5px; outline:none">new</button> + <button style="background: white; color:black; border-radius:5px; outline: 1px solid black">z</button>
 
-**Redo Previous**: <button style="background: red; color:white; border-radius:5px; outline:none">new</button> + <button style="background: white; color:black; border-radius:5px; ">y</button>
+**Redo Previous**: <button style="background: red; color:white; border-radius:5px; outline:none">new</button> + <button style="background: white; color:black; border-radius:5px; outline: 1px solid black">y</button>
 
-**Cycle through recent documents in a folder**: <button style="background: red; color:white; border-radius:5px; outline:none">new</button> + press <button style="background: white; color:black; border-radius:5px; ">pg up</button> or <button style="background: white; color:black; border-radius:5px; ">pg dn</button>
+**Cycle through recent documents in a folder**: <button style="background: red; color:white; border-radius:5px; outline:none">new</button> + press <button style="background: white; color:black; border-radius:5px; outline: 1px solid black">pg up</button> or <button style="background: white; color:black; border-radius:5px; outline: 1px solid black">pg dn</button>
 
 <div class="mx-5 mb-4 pl-2" style="border-left: 2px solid red;>
-	Must press <button style="background: white; color:black; border-radius:5px; outline:none">pg dn</button> twice initially to go to the most recent document. Press <button style="background: white; color:black; border-radius:5px; outline:none">pg dn</button> while holding <button style="background: red; color:white; border-radius:5px; outline:none">new</button> to access older drafts and <button style="background: white; color:black; border-radius:5px; outline:none">pg up</button> to return to more recent drafts.
+	Must press <button style="background: white; color:black; border-radius:5px; outline: 1px solid black">pg dn</button> twice initially to go to the most recent document. Press <button style="background: white; color:black; border-radius:5px; outline: 1px solid black">pg dn</button> while holding <button style="background: red; color:white; border-radius:5px; outline:none">new</button> to access older drafts and <button style="background: white; color:black; border-radius:5px; outline: 1px solid black">pg up</button> to return to more recent drafts.
 </div>
 
 
 
-**Cycle Console Screen**: <button style="background: white; color:black; border-radius:5px; outline:none">special</button>
+**Cycle Console Screen**: <button style="background: white; color:black; border-radius:5px; outline: 1px solid black">special</button>
 
-**Headsup Display**: <button style="background: white; color:black; border-radius:5px; outline:none">space</button> (hold for 3 seconds)
+**Headsup Display**: <button style="background: white; color:black; border-radius:5px; outline: 1px solid black">space</button> (hold for 3 seconds)
 
-**Toggle Backlight Control**: <button style="background: white; color:black; border-radius:5px; outline:none">special</button> + <button style="background: white; color:black; border-radius:5px; outline:none">1</button> or <button style="background: white; color:black; border-radius:5px; outline:none">special</button> + <button style="background: white; color:black; border-radius:5px; outline:none">L</button>.
+**Toggle Backlight Control**: <button style="background: white; color:black; border-radius:5px; outline: 1px solid black">special</button> + <button style="background: white; color:black; border-radius:5px; outline: 1px solid black">1</button> or <button style="background: white; color:black; border-radius:5px; outline: 1px solid black">special</button> + <button style="background: white; color:black; border-radius:5px; outline: 1px solid black">L</button>.
 
 **Device Menu**: Hold the power button for 4 seconds. 
 
-**Send draft to email**: <button style="background: white; color:black; border-radius:5px; outline:none">send</button>
+**Send draft to email**: <button style="background: white; color:black; border-radius:5px; outline: 1px solid black">send</button>
 
 <div class="mx-5 mb-4 pl-2" style="border-left: 2px solid red;">
 Email address associated with your Postbox account.
