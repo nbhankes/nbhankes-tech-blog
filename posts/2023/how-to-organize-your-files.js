@@ -65,5 +65,5 @@ The nesting will eventually bottom out to a folder of files. The depth depends o
 
 Organizing the files can be as simple as the default sort. Or you can add the date, the project ID, etc. to further organize the folder contents.
 
-Once you implement the system, you'll notice that the majority of you clicks land on folder marked [01] or [02]. And since these are always on top, you can get to your desired files much faster than normal.
+Once you implement the system, you'll notice that the majority of your navigation clicks land on folders marked [01] or [02]. And since these are always on top, you can get to your desired files much faster than normal.
 `
