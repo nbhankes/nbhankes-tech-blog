@@ -182,6 +182,10 @@ a:hover {
 	color: black;
 }
 
+.page-number b {
+	font-size: 2.4rem;
+}
+
 .page-number:hover {
 	font-family: 'TitleFont', Arial;
 	font-size: 2rem;
