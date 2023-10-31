@@ -57,6 +57,10 @@ h6 {
 	font-size: 1rem;
 }
 
+body {
+	background-color: #F8F6F1;
+}
+
 #logo {
 	font-family: 'TitleFont', Arial;
     text-align: center;
@@ -170,6 +174,18 @@ a:hover {
     font-size: 95%;
     color: var(--gold);
 	margin-left: 1.5rem;
+}
+
+.page-number {
+	font-family: 'TitleFont', Arial;
+	font-size: 2rem;
+	color: black;
+}
+
+.page-number:hover {
+	font-family: 'TitleFont', Arial;
+	font-size: 2rem;
+	color: var(--gold);
 }
 
 #footer {
