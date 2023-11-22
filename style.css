@@ -15,6 +15,7 @@
 	--gold: #F5A614;
 	--sea-foam-dark: #4FCFAB;
 	--sea-foam-light: #CFF2E8;
+	--white: #F8F6F1
 }
 
 @media screen and (max-width: 400px) {
@@ -58,7 +59,21 @@ h6 {
 }
 
 body {
-	background-color: #F8F6F1;
+	background-color: var(--white);
+}
+
+body::-webkit-scrollbar {
+	width: 14px; /* width of the entire scrollbar */
+}
+  
+body::-webkit-scrollbar-track {
+	background: var(--white);  /* color of the tracking area */
+}
+  
+body::-webkit-scrollbar-thumb {
+	background: black;   /* color of the scroll thumb */
+	border-radius: 10px;   /* roundness of the scroll thumb */
+	border: 4px solid var(--white);  /* creates padding around scroll thumb */
 }
 
 #logo {
