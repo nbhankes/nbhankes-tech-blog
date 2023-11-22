@@ -104,14 +104,12 @@ code {
 }
 
 a {
-	color:#4FCFAB;
+	color:var(--gold);
 }
 
 a:hover {
-	color:black;
+	color:#d2931d;
 	text-decoration: none;
-	text-decoration-style: wavy;
-	text-decoration-color: var(--gold);
 }
 
 .centered-img {
