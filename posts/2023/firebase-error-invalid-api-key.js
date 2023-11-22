@@ -82,20 +82,67 @@ export { app, auth, db }
 
 You'll notice the environment keys have \`\`\` import.meta.env. \`\`\` prepended to them. This is another Vite-ism. You might be used to \`\`\` process.env. \`\`\` as a way to expose your environment variables. Vite uses \`\`\` import.meta.env. \`\`\` to do this.
 
-Now you can access your Firestore database (db) and Firebase auth instances throughout the project like so:
+Now you can access your Firestore database (db) and Firebase auth instances throughout the project. I interact with Firestore in my API layer. This is a folder called \`\`\` api \`\`\` inside of the \`\`\` src \`\`\` folder. I've got a file called \`\`\` conversations.api.js \`\`\` for chat conversation GET and UPDATE type functions. Here's an example of the file:
 
 \`\`\`
+import { collection, query, where, updateDoc, getDocs } from "firebase/firestore";
+import { db } from '../firebaseConfig'
+
+const conversationsRef = collection(db, 'conversations');
+
+async function getUnreadMessageCount(userId) {
+	try {
+		const unreadMessages = await getDocs(
+			query(
+			  conversationsRef,
+			  where('participants', 'array-contains', userId),
+			  where('isRead', '==', false)
+			)
+		  );
+		// Get the count of unread messages
+		const count = unreadMessages.size;
+
+		return count;
+  	} catch (error) {
+		console.error('Error getting unread messages:', error);
+		throw error;
+  }
+
+}
+
+export { 
+	getUnreadMessageCount
+}
+\`\`\`
+
+I can then use the \`\`\` getUnreadMessageCount \`\`\` function throughout my project by importing it into my components, like so:
+\`\`\`
 <script setup>
-		import { db } from '../../firebaseConfig';
-		import { getDocs, collection, query, where, orderBy } from 'firebase/firestore';
+    import { useUserStore } from '../store/user'
+	import { getUnreadMessageCount } from '../api/conversations.api'
+	import { ref, onMounted } from 'vue'
 
-		const conversationsRef = collection(db, 'conversations');
+    const store = useUserStore();
+	const unreadMessageCount = ref(0);
 
-		const getAllMessagesQuery = query(conversationsRef, where('participants', "array-contains", store.user.uid), orderBy('createdAt', "asc"));
-
-		const messagesSnapshot = await getDocs(getAllMessagesQuery);
-		...
+	onMounted(async () => {
+		try {
+			const count = await getUnreadMessageCount(store.user.id);
+			unreadMessageCount.value = count;
+		} catch (error) {
+			console.error('Error fetching unread message count:', error);
+		}
+	});
 </script>
+
+<template>
+	<Suspense>
+		<v-badge :content="unreadMessageCount" color="error">
+			<v-icon>mdi-bell-outline</v-icon>
+		</v-badge>
+	</Suspense>
+</template>
+
 \`\`\`
 
 Alright then. I hope that helps.
