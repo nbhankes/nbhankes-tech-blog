@@ -20,7 +20,21 @@
 
 @media screen and (max-width: 400px) {
 	:root {
-		font-size: 12px;
+		font-size: 14px;
+	}
+
+	body::-webkit-scrollbar {
+		width: 14px; /* width of the entire scrollbar */
+	}
+	  
+	body::-webkit-scrollbar-track {
+		background: var(--white);  /* color of the tracking area */
+	}
+	  
+	body::-webkit-scrollbar-thumb {
+		background: black;   /* color of the scroll thumb */
+		border-radius: 10px;   /* roundness of the scroll thumb */
+		border: 4px solid var(--white);  /* creates padding around scroll thumb */
 	}
 }
 
