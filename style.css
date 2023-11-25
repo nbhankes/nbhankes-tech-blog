@@ -101,6 +101,7 @@ pre {
 	background: var(--sea-foam-light);
 	white-space: pre-wrap;
 	margin-bottom: 2rem;
+	overflow-x:scroll;
 }
 
 code {
@@ -110,6 +111,7 @@ code {
 	text-wrap: wrap;
 	width: 100%;
 	font-family: 'CodeFont', Arial;
+	overflow-x:scroll;
 }
 
 a {
@@ -213,10 +215,10 @@ a:hover {
 	}
 
 	pre, code {
+		overflow-x:scroll;
 		word-break: unset;
 		word-wrap:initial;
-		line-break:strict;
-		overflow-x:auto;
+		
 		font-size: 18px;
 	}
 
