@@ -22,19 +22,19 @@ Notice the plugins folder above. Plugins are self-contained code that add app-le
 
 Now we add our array into myArray.js and make it available to our app's global properties:
 \`\`\`
-	const myGlobalArray = [						
-			'One fish',
-			'Two fish',
-			'Red fish',
-			'Blue fish'
-	];
+const myGlobalArray = [						
+	'One fish',
+	'Two fish',
+	'Red fish',
+	'Blue fish'
+];
 
-	export default {
-			install(app) {
-				// Adds the array to the app's global properties
-				app.config.globalProperties.$myGlobalArray = myGlobalArray;
-			},
-	};
+export default {
+	install(app) {
+		// Adds the array to the app's global properties
+		app.config.globalProperties.$myGlobalArray = myGlobalArray;
+	},
+};
 \`\`\`
 
 And now we import this array into main.js and make it available to globally:

@@ -18,7 +18,7 @@ This command installs and creates \` create-vue \` —which is a scaffolding too
 
 Prior to \` create-vue \`, Vue.js projects were generated from Vue CLI (now in maintenance mode) and were based on webpack. The newer \` create-vue \` projects are based on Vite. Vite and webpack are both build tools. These build tools handle environment variables differently. 
 
-The examples I'd found online were out of date. And before I'd wrapped my head around these projec differences, a quick Google search for ~"vue js environment variables" sent me to the outdated Vue CLI documentation.
+The examples I'd found online were out of date. And before I'd wrapped my head around these project differences, a quick Google search for ~"vue js environment variables" sent me to the outdated Vue CLI documentation.
 
 Which brings me back to \` Uncaught FirebaseError: Firebase: Error (auth/invalid-api-key) \`
 

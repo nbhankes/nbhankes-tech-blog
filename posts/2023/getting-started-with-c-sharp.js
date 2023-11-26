@@ -36,9 +36,9 @@ public class Car
     // Class Constructor
     public Car(string make, string model, int year)
     {
-			this.make = make;
-			this.model = model;
-			this.year = year;
+		this.make = make;
+		this.model = model;
+		this.year = year;
     }
 
      //A Class Constructor is a special member method responsible for initializing the object of that class.
@@ -48,13 +48,13 @@ public class Car
     // Method 1
     public void StartEngine()
     {
-        	Console.WriteLine("The engine is started.");
+		Console.WriteLine("The engine is started.");
     }
 
     // Method 2
     public void Drive()
     {
-        	Console.WriteLine("The vehicle is driving.");
+		Console.WriteLine("The vehicle is driving.");
     }
 
     //A method is a block of code within a class that performs a specific task or action. Methods are declared within a class and are accessed by and invoked on objects created from that class. 
@@ -90,20 +90,20 @@ This is what that a namespace would look like in your codebase:
 \`\`\`
 namespace VehicleInventory
 {
-		public class Car
-		{
-				// Car class code from above
-		}
+	public class Car
+	{
+		// Car class code from above
+	}
 
-		public class Truck
-		{
-			// Truck class
-		}
+	public class Truck
+	{
+		// Truck class
+	}
 
-		public class Motorcycle
-		{
-			// Motorcycle class
-		}
+	public class Motorcycle
+	{
+		// Motorcycle class
+	}
 }
 \`\`\`
 

@@ -116,15 +116,15 @@ In this tutorial, we'll build a button. So let's create a button component file:
 
 
 \`\`\`
-	<template>
-			<button class="button">
-					<slot/>
-			</button>
-	</template>
+<template>
+	<button class="button">
+		<slot/>
+	</button>
+</template>
 
-	<style lang="scss>
+<style lang="scss>
 
-	</style>
+</style>
 \`\`\`
 
 The [slot](https://vuejs.org/v2/guide/components-slots.html) tag acts like a placeholder for text that will display inside of our button component. So for example, when we use our "btn" component though out our project, the we will do it like this:
@@ -141,23 +141,23 @@ Before we style our button, let's create a mixin that we can use. A mixin is ess
 Within the "mixins.scss" file:
 
 \`\`\`
-	@mixin my-mixin-name {
-			border: solid 2x black;
-			border-radius: 10px;
-	}
+@mixin my-mixin-name {
+	border: solid 2x black;
+	border-radius: 10px;
+}
 \`\`\`
 
 And then, when declaring this mixin inside of your usual component styling, the @include statement adds the mixin snippet to the CSS: 
 
 \`\`\`
-	<style lang="scss">
-			.my-class {
-					margin: 2rem 5%;
-					background: black;
-					@include my-mixin-name
-					padding: 1rem;
-			}
-	</style>
+<style lang="scss">
+	.my-class {
+		margin: 2rem 5%;
+		background: black;
+		@include my-mixin-name
+		padding: 1rem;
+	}
+</style>
 \`\`\`
 
 For this tutorial, we'll create a mixin that makes text all caps and bold.
@@ -165,10 +165,10 @@ For this tutorial, we'll create a mixin that makes text all caps and bold.
 Add this to the mixins.scss file:
 
 \`\`\`
-	@mixins bold-text {
-			text-transform: uppercase;
-			font-weight: 900;
-	}
+@mixins bold-text {
+	text-transform: uppercase;
+	font-weight: 900;
+}
 \`\`\`
 
 Now we can use this mixin throughout our project.
@@ -179,24 +179,24 @@ Now we can use this mixin throughout our project.
 So back in our "btn" component, we'll add some style. We'll add our mixin using the @include SCSS syntax:
 
 \`\`\`
-	<template>
-			<button class="my-btn">
-					<slot/>
-			</button>
-	</template>
+<template>
+	<button class="my-btn">
+		<slot/>
+	</button>
+</template>
 
-	<style lang="scss">
-			.my-btn {
-					width: 10rem;
-					height: 3rem;
-					border-radius: 10px;
-					background: black;
-					color: white;
-					@include bold-text;
-					padding: 1rem;
-					margin: 1rem auto; 
-			}
-	</style>
+<style lang="scss">
+	.my-btn {
+		width: 10rem;
+		height: 3rem;
+		border-radius: 10px;
+		background: black;
+		color: white;
+		@include bold-text;
+		padding: 1rem;
+		margin: 1rem auto; 
+	}
+</style>
 \`\`\`
 
 # Rendering Our Button On the Browser.
@@ -204,13 +204,13 @@ So back in our "btn" component, we'll add some style. We'll add our mixin using 
 Now go to the "pages" folder in the root directory, and open the "index.vue" file. Remove the boilerplate nested inside of the template tag and add the "btn" component, like so:
 
 \`\`\`
-	<template>
-			<btn>Hello World</btn>
-	</template>
+<template>
+	<btn>Hello World</btn>
+</template>
 
-	<script>
-			export default {};
-	</script>
+<script>
+	export default {};
+</script>
 \`\`\`
 
 Now go to the terminal and enter the following command:
