@@ -53,9 +53,7 @@ Now that the environment variables are set up according to Vite requirements, we
 
 To setup your firebase configuration, add a \` firebaseConfig.js \` file to the project's \` src \` folder. The file will look like this:
 
-
-
-~~~ javascript
+\`\`\` javascript
 //import npm packages
 import { initializeApp } from "firebase/app";
 import { getAuth } from 'firebase/auth'
@@ -63,13 +61,13 @@ import { getFirestore } from 'firebase/firestore';
 
 //Create our firebase App object
 const firebaseConfig = {
-    	apiKey: import.meta.env.VITE_APP_FIREBASE_API_KEY,
-    	authDomain: import.meta.env.VITE_APP_FIREBASE_AUTH_DOMAIN,
-    	projectId: import.meta.env.VITE_APP_FIREBASE_PROJECT_ID,
-    	storageBucket: import.meta.env.VITE_APP_FIREBASE_STORAGE_BUCKET,
-    	messagingSenderId: import.meta.env.VITE_APP_FIREBASE_MESSAGING_SENDER_ID,
-    	appId: import.meta.env.VITE_APP_FIREBASE_APP_ID,
-    	measurementId: import.meta.env.VITE_APP_FIREBASE_MEASUREMENT_ID
+	apiKey: import.meta.env.VITE_APP_FIREBASE_API_KEY,
+	authDomain: import.meta.env.VITE_APP_FIREBASE_AUTH_DOMAIN,
+	projectId: import.meta.env.VITE_APP_FIREBASE_PROJECT_ID,
+	storageBucket: import.meta.env.VITE_APP_FIREBASE_STORAGE_BUCKET,
+	messagingSenderId: import.meta.env.VITE_APP_FIREBASE_MESSAGING_SENDER_ID,
+	appId: import.meta.env.VITE_APP_FIREBASE_APP_ID,
+	measurementId: import.meta.env.VITE_APP_FIREBASE_MEASUREMENT_ID
 };
 
 // Initialize firebase
@@ -82,7 +80,7 @@ const db = getFirestore(app);
 const auth = getAuth();
 
 export { app, auth, db }
-~~~
+\`\`\`
 
 
 
@@ -98,54 +96,56 @@ const conversationsRef = collection(db, 'conversations');
 
 async function getUnreadMessageCount(userId) {
 		try {
-				const unreadMessages = await getDocs(
-						query(
-			  					conversationsRef,
-			  					where('participants', 'array-contains', userId),
-								where('isRead', '==', false)
-						)
-				);
-				// Get the count of unread messages
-				const count = unreadMessages.size;
+			const unreadMessages = await getDocs(
+				query(
+					conversationsRef,
+					where('participants', 'array-contains', userId),
+					where('isRead', '==', false)
+				)
+			);
+			// Get the count of unread messages
+			const count = unreadMessages.size;
 
-				return count;
+			return count;
   		} catch (error) {
-				console.error('Error getting unread messages:', error);
-				throw error;
+			console.error('Error getting unread messages:', error);
+			throw error;
 		}
 }
 
 export { 
-		getUnreadMessageCount
+	getUnreadMessageCount
 }
 ~~~
 
 I can then use the \` getUnreadMessageCount \` function throughout my project by importing it into my components, like so:
+
+
 ~~~ javascript
 <script setup>
-    	import { useUserStore } from '../store/user'
-		import { getUnreadMessageCount } from '../api/conversations.api'
-		import { ref, onMounted } from 'vue'
+	import { useUserStore } from '../store/user'
+	import { getUnreadMessageCount } from '../api/conversations.api'
+	import { ref, onMounted } from 'vue'
 
-    	const store = useUserStore();
-		const unreadMessageCount = ref(0);
+	const store = useUserStore();
+	const unreadMessageCount = ref(0);
 
-		onMounted(async () => {
-				try {
-						const count = await getUnreadMessageCount(store.user.id);
-						unreadMessageCount.value = count;
-				} catch (error) {
-						console.error('Error fetching unread message count:', error);
-				}
-		});
+	onMounted(async () => {
+		try {
+			const count = await getUnreadMessageCount(store.user.id);
+			unreadMessageCount.value = count;
+		} catch (error) {
+			console.error('Error fetching unread message count:', error);
+		}
+	});
 </script>
 
 <template>
-		<Suspense>
-				<v-badge :content="unreadMessageCount" color="error">
-						<v-icon>mdi-bell-outline</v-icon>
-				</v-badge>
-		</Suspense>
+	<Suspense>
+		<v-badge :content="unreadMessageCount" color="error">
+			<v-icon>mdi-bell-outline</v-icon>
+		</v-badge>
+	</Suspense>
 </template>
 ~~~
 

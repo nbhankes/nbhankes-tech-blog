@@ -99,19 +99,14 @@ pre {
 	padding:8px;
 	border-radius: 5px;
 	background: var(--sea-foam-light);
-	white-space: pre-wrap;
 	margin-bottom: 2rem;
-	overflow-x:scroll;
 }
 
 code {
 	background: var(--sea-foam-light);
 	color: black;
 	padding:2px;
-	text-wrap: wrap;
-	width: 100%;
 	font-family: 'CodeFont', Arial;
-	overflow-x:scroll;
 }
 
 a {
@@ -127,8 +122,7 @@ a:hover {
 	margin: 0 auto;
 }
 
-
- @media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) {
     #logo {
         margin-left: auto;
         margin-right: auto;
@@ -214,11 +208,7 @@ a:hover {
 		font-size: 20px;
 	}
 
-	pre, code {
-		overflow-x:scroll;
-		word-break: unset;
-		word-wrap:initial;
-		
+	pre, code {	
 		font-size: 18px;
 	}
 
