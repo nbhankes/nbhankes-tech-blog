@@ -95,22 +95,22 @@ import { db } from '../firebaseConfig'
 const conversationsRef = collection(db, 'conversations');
 
 async function getUnreadMessageCount(userId) {
-		try {
-			const unreadMessages = await getDocs(
-				query(
-					conversationsRef,
-					where('participants', 'array-contains', userId),
-					where('isRead', '==', false)
-				)
-			);
-			// Get the count of unread messages
-			const count = unreadMessages.size;
+	try {
+		const unreadMessages = await getDocs(
+			query(
+				conversationsRef,
+				where('participants', 'array-contains', userId),
+				where('isRead', '==', false)
+			)
+		);
+		// Get the count of unread messages
+		const count = unreadMessages.size;
 
-			return count;
-  		} catch (error) {
-			console.error('Error getting unread messages:', error);
-			throw error;
-		}
+		return count;
+	} catch (error) {
+		console.error('Error getting unread messages:', error);
+		throw error;
+	}
 }
 
 export { 
