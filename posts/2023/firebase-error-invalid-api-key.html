@@ -3,10 +3,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel='stylesheet' type='text/css' href="../../lib/bootstrap.min.css">
-    <link rel='stylesheet' type='text/css' href="../../style.css">
+    <link rel='stylesheet' type='text/css' href="../../assets/styles/bootstrap.min.css">
+    <link rel='stylesheet' type='text/css' href="../../assets/styles/style.css">
+	<link rel='stylesheet' type='text/css' href="../../assets/styles/atom-one-dark.css">
     <title>Uncaught FirebaseError: Firebase: Error (auth/invalid-api-key)</title>
-	<link rel="icon" type="image/x-icon" href="../../favicon.png">
+	<link rel="icon" type="image/x-icon" href="../../assets/favicon.png">
 	<meta name="description" content="Firebase: Error (auth/invalid-api-key)">
 	<meta name="keywords" content="Vue, Vue 3, Vue CLI, Firebase configuration, Vite environment variables, Vue environment variables" />
 </head>
@@ -34,10 +35,11 @@
     </div>
 </body>
 
-<script src="../../lib/showdown.min.js"></script>
-
+<script src="../../assets/scripts/showdown.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 <!-- UPDATE NAME OF THE POST JS FILE -->
 <script type="module">
     import { post } from "./firebase-error-invalid-api-key.js";
     document.getElementById("post").innerHTML = new showdown.Converter().makeHtml(post);
+	hljs.highlightAll();
 </script>

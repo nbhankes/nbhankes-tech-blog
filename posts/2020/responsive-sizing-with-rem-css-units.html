@@ -3,10 +3,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel='stylesheet' type='text/css' href="../../lib/bootstrap.min.css">
-    <link rel='stylesheet' type='text/css' href="../../style.css">
+    <link rel='stylesheet' type='text/css' href="../../assets/styles/bootstrap.min.css">
+    <link rel='stylesheet' type='text/css' href="../../assets/styles/style.css">
+	<link rel='stylesheet' type='text/css' href="../../assets/styles/atom-one-dark.css">
     <title>Responsive Sizing With rem CSS Units</title>
-	<link rel="icon" type="image/x-icon" href="../../favicon.png">
+	<link rel="icon" type="image/x-icon" href="../../assets/favicon.png">
 	<meta name="description" content="We can use rem CSS units to make our web fonts responsive.">
 	<meta name="keywords" content="CSS, Responsive web design, rem" />
 </head>
@@ -34,10 +35,11 @@
     </div>
 </body>
 
-<script src="../../lib/showdown.min.js"></script>
-
+<script src="../../assets/scripts/showdown.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 <!-- UPDATE NAME OF THE POST JS FILE -->
 <script type="module">
     import { post } from "./responsive-sizing-with-rem-css-units.js";
     document.getElementById("post").innerHTML = new showdown.Converter().makeHtml(post);
+	hljs.highlightAll();
 </script>

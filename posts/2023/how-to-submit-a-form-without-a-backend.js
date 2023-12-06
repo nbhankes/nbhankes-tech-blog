@@ -16,7 +16,7 @@ Once you've added your site to Netlify, you'll need to enable form handling befo
 
 Once you're all set up, handling your form submissions is as easy as adding the \`netlify\` attribute in the form tag:
 
-\`\`\`
+\`\`\`html
 <form name="application-submittal" method="POST" netlify>
   <p>
     <label>Your Name: <input type="text" name="name" /></label>

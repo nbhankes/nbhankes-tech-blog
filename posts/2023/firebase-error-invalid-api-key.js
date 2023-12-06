@@ -5,7 +5,7 @@ export const post = `
 I recently connected a Vue.js 3 app with Google Firebase. New to both Vue.js and Firebase, I cobbled together an environment variables solution following various examples I'd found online. So it's no surprise I encountered the following error:
 
 <figure>
-	<img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/p79q8poss2r4o1sh1glp.PNG"  alt="Uncaught FirebaseError: Firebase: Error (auth/invalid-api-key)" style="margin: 0 10%; max-width:80%;">
+	<img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/p79q8poss2r4o1sh1glp.PNG"  alt="Uncaught FirebaseError: Firebase: Error (auth/invalid-api-key)" style="width:100%;">
 </figure>
 
 After diving into the issue, I discovered my error and resolved the issue using the approach I share below.

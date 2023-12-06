@@ -63,20 +63,20 @@ Now add the following code into your <code>nuxt.config.js</code> file:
 \`\`\`
 
 css: [ 
-    	'~assets/css/main.css' 
+	'~assets/css/main.css' 
 ],
 
 
 buildModules: [ 
-    	'@nuxtjs/style-resources' 
+	'@nuxtjs/style-resources' 
 ], 
 
     
 styleResources: { 
-		scss: [ 
-      			'~assets/scss/mixins.scss', 
-      			'~assets/scss/variables.scss' 
-    	] 
+	scss: [ 
+		'~assets/scss/mixins.scss', 
+		'~assets/scss/variables.scss' 
+	] 
   },
 
 \`\`\`
@@ -89,21 +89,21 @@ And we're also telling Nuxt where our SCSS and CSS files are located. All SCSS v
 Here's the basic structure of a Nuxt Component:
 
 \`\`\`html
-	<template>
-			<div class="my-parent">
-					<p class="my-child">Hello World!</p>
-			</div>
-	</template>
+<template>
+	<div class="my-parent">
+		<p class="my-child">Hello World!</p>
+	</div>
+</template>
 
-	<style lang="scss">
-			.my-parent {
-					background: black;
-			}
+<style lang="scss">
+	.my-parent {
+		background: black;
+	}
 
-			.my-child {
-					font-size: 1.25rem;
-			}
-	</style>
+	.my-child {
+		font-size: 1.25rem;
+	}
+</style>
 \`\`\`
 
 Our component is built within the \`\`\`<template>\`\`\` tags. And there can only be one top level tag within the template tag. As long as the rest of the html is nested within that top level tag, \`\`\`<div class="my-parent">\`\`\` in the example above, the component will render properly.
@@ -130,7 +130,7 @@ In this tutorial, we'll build a button. So let's create a button component file:
 The [slot](https://vuejs.org/v2/guide/components-slots.html) tag acts like a placeholder for text that will display inside of our button component. So for example, when we use our "btn" component though out our project, the we will do it like this:
 
 \`\`\`
-	<btn>Submit</btn>
+<btn>Submit</btn>
 \`\`\`
 
 The text nested inside of the \`\`\`<btn>\`\`\` tag is accounted for by the initial \`\`\`<slot/>\`\`\` tag in the \`\`\`<btn>\`\`\` component. "Submit" will render in its place.

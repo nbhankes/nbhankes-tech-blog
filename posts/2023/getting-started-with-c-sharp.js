@@ -15,23 +15,16 @@ This is what the Car class would look like in your codebase:
 \`\`\`
 public class Car
 {
+
     //Fields
     private string make;
     private string model;
     private int year;
 
-    //A field is a variable declared within a class.
-
-
-
     //Properties
     public string Make { get; set; }
     public string Model { get; set; }
     public int Year { get; set; }
-
-    //A property is a class member that offers a convenient way to access, modify, or calculate the value of a private field. The get and set keywords are used to define the accessors for the property. The get accessor returns the property value, and the set accessor assigns a new value to the property
-
-
 
     // Class Constructor
     public Car(string make, string model, int year)
@@ -40,10 +33,6 @@ public class Car
 		this.model = model;
 		this.year = year;
     }
-
-     //A Class Constructor is a special member method responsible for initializing the object of that class.
-
-
 
     // Method 1
     public void StartEngine()
@@ -56,8 +45,6 @@ public class Car
     {
 		Console.WriteLine("The vehicle is driving.");
     }
-
-    //A method is a block of code within a class that performs a specific task or action. Methods are declared within a class and are accessed by and invoked on objects created from that class. 
 }
 \`\`\`
 
