@@ -24,7 +24,7 @@
 
 @media (prefers-color-scheme: dark) {
 	:root {
-	  --text: #827e8d;
+	  --text: #acabb0;
 	  --background: #111013;
 	  --accent: #36343A; 
 	  --accent-hover: #BAB0A0;
