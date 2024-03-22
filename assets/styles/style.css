@@ -24,16 +24,16 @@
 
 @media (prefers-color-scheme: dark) {
 	:root {
-	  --text: #acabb0;
-	  --background: #111013;
-	  --accent: #929194; 
-	  --accent-hover: #BAB0A0;
-	  --secondary: #c4a035;
-	  --secondary-hover: #af7a18;
-	  --callout: #36343A;
-	  --callout-dark: #171511;
+		--text: #acabb0;
+		--background: #111013;
+		--accent: #929194; 
+		--accent-hover: #BAB0A0;
+		--secondary: #c4a035;
+		--secondary-hover: #af7a18;
+		--callout: #36343A;
+		--callout-dark: #171511;
 	}
-  }
+}
 
 h1,
 h2,

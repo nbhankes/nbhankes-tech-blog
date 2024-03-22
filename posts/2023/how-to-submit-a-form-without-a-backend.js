@@ -37,7 +37,7 @@ The next time your website is rebuilt and deployed, Netlify's built-in form dete
 
 You can review the form submissions within Netlify by the form name:
 
-<img width="100%" src="https://drive.google.com/uc?id=1xKQQJ_hdQ5ybNZUEmrcmBoqMvWb6lD4F" alt="Submitting forms with Netlify is easy"/>
+<img width="100%" src="https://drive.google.com/uc?id=1PI_v8a2jPWfPpKvmD_uL6xKKRbZcb7rG" alt="Submitting forms with Netlify is easy"/>
 
 And if you'd prefer to forward the form submission to an email address or as an HTTP POST request, you can set this up within your site UI Form page.
 
