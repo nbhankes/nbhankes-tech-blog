@@ -4,7 +4,7 @@ export const post = `
 
 When deploying a Vue single-page application (SPA) to Netlify, you may encounter an issue where your index.html file renders perfectly fine, but any pages routed through vue-router fail to load properly. On the intended route, you'll see a Page Not Found card. And in the console, you will see this error:
 
-\`\`\`ps
+\`\`\`powershell
 Failed to load resource: the server responded with a status of 404 ()
 \`\`\`
 
