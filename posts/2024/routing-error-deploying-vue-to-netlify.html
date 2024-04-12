@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel='stylesheet' type='text/css' href="../../assets/styles/bootstrap.min.css">
+		<link rel='stylesheet' type='text/css' href="../../assets/styles/style.css">
+		<link rel='stylesheet' type='text/css' href="../../assets/styles/atom-one-dark.css">
+		<title>Using Sass In Nuxt.js</title>
+		<link rel="icon" type="image/x-icon" href="../../assets/favicon.png">
+		<meta name="description" content="A tutorial on how to add Sass to your Nuxt.js app">
+		<meta name="keywords" content="Nuxt, Sass, Tutorial" />
+		<meta property="og:image" content="https://media.dev.to/cdn-cgi/image/2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fvb1vvfap3azcietcmjot.png">
+	</head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-8P35ZP4S3B"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-8P35ZP4S3B');
+	</script>
+
+	<body>
+		<div class="my-5">
+			<a href="../../index.html" id="logo" class="article-logo">N. B. Hankes</a>
+			<div>
+				<div class="col-12 col-md-10 mx-auto">
+					<div class="mt-2" id="post"></div>
+				</div>
+			</div>
+			<div id="footer">
+				Copyright new Date.getFullYear();
+			</div>
+		</div>
+	</body>
+
+	<script src="../../assets/scripts/showdown.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+	<!-- UPDATE NAME OF THE POST JS FILE -->
+	<script type="module">
+		import { post } from "./sass-in-nuxt.js";
+		document.getElementById("post").innerHTML = new showdown.Converter().makeHtml(post);
+		hljs.highlightAll();
+	</script>
+</html>
