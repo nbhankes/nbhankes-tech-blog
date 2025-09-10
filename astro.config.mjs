@@ -1,7 +1,6 @@
 import { defineConfig } from 'astro/config';
 import { remarkReadingTime } from './src/utils/readingTime';
 import rehypePrettyCode from 'rehype-pretty-code';
-import vercelStatic from '@astrojs/vercel';
 import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
 const options = {
@@ -30,7 +29,7 @@ const options = {
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://astro-tech-blog-ten.vercel.app/',
+	site: 'https://nbhankes.dev',
 
 	markdown: {
 		syntaxHighlight: false,
@@ -41,12 +40,6 @@ export default defineConfig({
 
 	integrations: [sitemap()],
 	output: 'static',
-
-	adapter: vercelStatic({
-		webAnalytics: {
-			enabled: true
-		}
-	}),
 	vite: {
 		plugins: [tailwindcss()]
 	}
