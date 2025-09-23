@@ -46,13 +46,13 @@ And I gave the LLM the following instructions:
 I require 4:3 ratio, portrait orientation product images for my cosmetics website. I've attached the product bottle and the label. I need these to be combined with a beach background. The product should take up roughly 65% of the area of the image. The beach background should be of the rugged beaches found in Humboldt County, California. It should be slightly out of focus.
 ```
 
-After some thought, the LLM produced the following product image:
+After some thought, the LLM produced the following product image (which is remarkable as I re-read that prompt):
 
 <figure class="flex justify-center">
 	<img src="/images/prompt-output-bad.png"  alt="LLM prompt response image failed" style="height: 500px;">
 </figure>
 
-As you can see, the background and bottle are perfect. However, the LLM moved label items to get as much of the lable text into the perspective as possible. This is not desired.
+As you can see, the background and bottle are perfect. However, the LLM rearranged the label to get as much of the label text into the perspective as possible. This was not not desired.
 
 Further prompts to remove unwanted label components proved futile.
 
@@ -88,7 +88,7 @@ By removing the unseen portion of the product label, the LLM was no longer confu
 
 ## Creating a Product Variant Group Photo
 
-I created three product photos for three product variants. Next, I wanted to create an image of the products grouped together. The LLM has no knowledge of the relative scale of the three product variants, so my prompt had to include scale information.
+I created three product photos for three product variants using the method described above. Next, I wanted to create an image of the products grouped together. The LLM has no knowledge of the relative scale of the three product variants, so my prompt had to include scale information.
 
 In addition to supplying the three product images, I created the following prompt:
 
