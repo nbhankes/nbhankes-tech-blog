@@ -22,7 +22,11 @@ allPosts.sort(sortPostsByDate);
 		{
 			allPosts.map((post: any) => (
 				<div class="mb-4 basis-1 last:mb-0">
-					<Card post={post} />
+                    <article class="prose prose-neutral max-w-none break-words
+                    prose-pre:whitespace-pre-wrap prose-pre:break-words prose-pre:break-all
+                    prose-code:break-words prose-code:break-all">
+                        <Card post={post} />
+                    </article>
 				</div>
 			))
 		}

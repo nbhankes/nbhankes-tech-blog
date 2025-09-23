@@ -4,8 +4,8 @@ title: "How to Develop WordPress locally using XAMPP"
 pubDate: 2025-09-09
 description: "This article offers a brief tutorial on getting started with local WordPress development using XAMPP software to run an Apache server and MySQL database."
 author: "N. B. Hankes"
-isPinned: true
-excerpt: 
+isPinned: false
+excerpt: This article offers a brief tutorial on getting started with local WordPress development using XAMPP software to run an Apache server and MySQL database.
 image:
   src:
   alt:

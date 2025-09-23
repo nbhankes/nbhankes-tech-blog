@@ -5,7 +5,7 @@ pubDate: 2025-09-09
 description: "This article shows you how to dynamically render a Youtube channel's most recent Youtube upload to a Ghost Blog home page."
 author: "N. B. Hankes"
 isPinned: true
-excerpt: 
+excerpt: This article shows you how to dynamically render a Youtube channel's most recent Youtube upload to a Ghost Blog home page.
 image:
   src:
   alt:

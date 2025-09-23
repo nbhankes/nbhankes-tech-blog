@@ -58,4 +58,32 @@ These styles are for code highlighting that can't be easily implemented with jus
     .content code[data-line-numbers-max-digits='3'] > span[data-line]::before {
         @apply w-12;
     }
+
+    /* Make pretty-code blocks wrap instead of scroll */
+    [data-rehype-pretty-code-figure] pre {
+    white-space: pre-wrap !important;   /* allow wrapping */
+    overflow-x: visible;                 /* no horizontal scrollbar */
+    }
+
+    /* Inherit wrapping into the code grid and its line spans */
+    [data-rehype-pretty-code-figure] code {
+    display: block;                      /* break out of grid; optional but safest */
+    white-space: inherit !important;
+    min-width: 0;                        /* allow shrinking/wrapping */
+    }
+
+    [data-rehype-pretty-code-figure] code > span[data-line] {
+    display: block;
+    white-space: inherit !important;
+    overflow-wrap: anywhere;             /* strong wrap hint for long tokens/URLs */
+    word-break: break-word;
+    min-width: 0;
+    }
+
+    /* (Optional) If your theme forces grid on <code>, keep it but allow wrapping */
+    [data-rehype-pretty-code-figure] code[style*="display: grid"] {
+    display: grid;
+    white-space: inherit !important;
+    min-width: 0;
+    }
 }
