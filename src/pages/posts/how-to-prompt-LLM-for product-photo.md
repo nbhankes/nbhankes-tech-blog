@@ -52,7 +52,7 @@ After some thought, the LLM produced the following product image (which is remar
 	<img src="/images/prompt-output-bad.png"  alt="LLM prompt response image failed" style="height: 500px;">
 </figure>
 
-As you can see, the background and bottle are perfect. However, the LLM rearranged the label to get as much of the label text into the perspective as possible. This was not not desired.
+As you can see, the background and bottle are perfect. However, the LLM rearranged the label to get as much of the label text into the perspective as possible. This was not desired.
 
 Further prompts to remove unwanted label components proved futile.
 
